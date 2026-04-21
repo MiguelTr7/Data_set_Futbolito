@@ -1,4 +1,34 @@
-# Here you can define all your datasets by using simple YAML syntax.
-#
-# Documentation for this file format can be found in "The Data Catalog"
-# Link: https://docs.kedro.org/en/stable/catalog-data/introduction/#data-catalog
+country:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Country
+  credentials: sqlite_creds
+
+league:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: League
+  credentials: sqlite_creds
+
+match:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Match
+  credentials: sqlite_creds
+
+player:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Player
+  credentials: sqlite_creds
+
+player_attributes:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Player_Attributes
+  credentials: sqlite_creds
+
+team:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Team
+  credentials: sqlite_creds
+
+team_attributes:
+  type: kedro_datasets.pandas.SQLTableDataset
+  table_name: Team_Attributes
+  credentials: sqlite_creds
